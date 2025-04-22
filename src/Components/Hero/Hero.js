@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import './Hero.css';
-import HeroImage from '../../Assets/hero-person.jpg';
+import HeroImage from '../../Assets/hero-lift.jpg'; // Make sure this is your actual image path
 
 const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="hero-wrapper">
-      {/* Navigation Bar */}
       <nav className="hero-nav">
         <div className="hero-logo">🏋️‍♂️ Athleticon</div>
 
@@ -24,29 +23,24 @@ const Hero = () => {
         </ul>
       </nav>
 
-      {/* Main Hero Section */}
       <section className="hero-section">
-        <div className="hero-content">
+        <div className="hero-container">
           <div className="hero-left">
-            <h1 className="hero-title">
-              Fitness &<br />
-              <span className="hero-highlight">Health Training</span>
-            </h1>
-            <p className="hero-subtext">
+            <h1>Fitness &<br /><span>Health Training</span></h1>
+            <p>
               Strong is the simplest, most intuitive workout tracking experience.<br />
               Trusted by over 3 million users worldwide.
             </p>
-            <button className="hero-btn">Get Started</button>
-
+            <button>Get Started</button>
             <div className="hero-stats">
-              <div><strong>3.2k</strong><br />Happy User</div>
-              <div><strong>350k</strong><br />Running Track</div>
-              <div><strong>100+</strong><br />Workout Type</div>
+              <div><strong>3.2k</strong><br />Happy Users</div>
+              <div><strong>350k</strong><br />Running Tracks</div>
+              <div><strong>100+</strong><br />Workout Types</div>
             </div>
           </div>
 
           <div className="hero-right">
-            <img src={HeroImage} alt="Fitness person" className="hero-img" />
+            <img src={HeroImage} alt="Workout" />
           </div>
         </div>
       </section>

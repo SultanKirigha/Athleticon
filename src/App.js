@@ -1,10 +1,12 @@
-import Hero from './Components/Hero/Hero'; // ⬅️ This imports the actual component
 import './App.css';
+import Hero from './Components/Hero/Hero';
+// import Maintain from './Components/Maintain/Maintain';
 
 function App() {
   return (
     <div className="page-wrapper">
       <Hero />
+      {/* <Maintain /> */}
     </div>
   );
 }
