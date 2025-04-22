@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Hero.css';
-import HeroImage from '../../Assets/hero-lift.jpg'; // Make sure this is your actual image path
+import HeroImage from '../../Assets/man-with-barbell.jpg'; // Make sure this is your actual image path
 
 const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
