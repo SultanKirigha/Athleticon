@@ -1,0 +1,160 @@
+/* Wrapper for nav + hero */
+.hero-wrapper {
+    /* background: #f9f9f9; */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Nav Bar */
+  .hero-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .hero-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .hero-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+  }
+  
+  .hero-nav-links li {
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 60px 20px;
+    position: relative;
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .hero-left {
+    flex: 1;
+    z-index: 2;
+  }
+  
+  .hero-title {
+    font-size: 64px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.1;
+  }
+  
+  .hero-highlight {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-subtext {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  
+  .hero-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  
+  .hero-stats strong {
+    font-size: 20px;
+    display: block;
+    color: #000;
+  }
+  
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .hero-img {
+    max-width: 100%;
+    width: 480px;
+    position: relative;
+    top: -30px;
+    z-index: 1;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-title {
+      font-size: 42px;
+    }
+  
+    .hero-stats {
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+  
+    .hero-img {
+      width: 320px;
+      top: 0;
+    }
+  
+    .hero-nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: white;
+      padding: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
+  
+    .hero-nav-links.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
