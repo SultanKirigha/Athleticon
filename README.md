@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+## 🏋️‍♂️ **Athleticon Landing Page**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive fitness and health landing page built with **React.js**, featuring bold UI, a mobile-friendly layout, and a clean Hero section designed for high-impact user engagement.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### 📸 **Preview**
 
-### `npm start`
+![Athleticon Preview](./screenshot.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Replace `screenshot.png` with your actual screenshot file in the project root if desired.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ⚡️ Fully responsive layout (mobile-first design)
+- 🍔 Hamburger menu navigation
+- 🎨 Gradient backgrounds and clean typography
+- 🖼️ Hero image section with smart text alignment
+- 💅 Polished buttons, spacing, and hover transitions
+- 🌀 Smooth animation on load
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🛠️ Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React.js**
+- **CSS Flexbox + Media Queries**
+- **Google Fonts (Poppins)**
+- **SVG & Modern UI Techniques**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 📁 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+src/
+  assets/             # Images (hero image, stickers, etc.)
+  Components/
+    Hero/             # Hero.js + Hero.css
+    Maintain/         # Next sections (optional)
+  App.js
+  App.css
+public/
+  index.html          # Google Fonts, metadata
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🧪 Running Locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# 1. Clone the repo
+git clone https://github.com/your-username/athleticon-landing.git
 
-## Learn More
+# 2. Navigate to project
+cd athleticon-landing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 3. Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 4. Start development server
+npm start
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🔮 Deployment Tips
 
-### Analyzing the Bundle Size
+You can deploy this React site using:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://netlify.com/)
+- [GitHub Pages](https://create-react-app.dev/docs/deployment/)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 📌 Todo / Roadmap
 
-### Advanced Configuration
+- [ ] Add “Achieve Your Goals in 1-2-3” section
+- [ ] Add Testimonials or App Screenshot Strip
+- [ ] Add Footer with social/contact links
+- [ ] Connect to backend (optional)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### 🙌 Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks to the inspiration from Figma templates and modern landing pages in fitness apps.
