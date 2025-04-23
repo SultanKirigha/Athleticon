@@ -26,7 +26,7 @@ const Hero = () => {
       </nav>
 
       <section className="hero-section">
-        <div className="hero-container">
+        <div className="hero-container content-wrapper">
           <div className="hero-left">
             <h1>
               Fitness &<br />

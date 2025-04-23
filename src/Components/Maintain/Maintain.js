@@ -1,29 +1,49 @@
-// import React from 'react';
-// import './Maintain.css';
+import React from 'react';
+import './Maintain.css';
+import person from '../../Assets/image.png';
+import fruit from '../../Assets/fruit.avif';
+import veggie from '../../Assets/vegetables.webp';
+import protein from '../../Assets/Adobe Express - file (6).png';
+import water from '../../Assets/water.webp'; // 💧 your new water image
 
-// // Placeholder image URLs (replace these when you get real assets)
-// const MaintainImage = "https://via.placeholder.com/450x400?text=Maintain+Image";
-// const Sticker = "https://via.placeholder.com/120x120?text=Sticker";
 
-// const Maintain = () => {
-//   return (
-//     <section className="maintain-section">
-//       <div className="maintain-content">
-//         <div className="maintain-left">
-//           <h2>Move to<br />Maintain your Health</h2>
-//           <p>
-//             Develop a consistent and empowering routine to improve<br />
-//             your physical and mental health.
-//           </p>
-//           <button className="maintain-btn">Get Started</button>
-//         </div>
-//         <div className="maintain-right">
-//           <img src={MaintainImage} alt="Stretching person" className="maintain-img" />
-//           <img src={Sticker} alt="Sticker" className="maintain-sticker" />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
+const MaintainSection = () => {
+  return (
+    <section className="maintain-section">
+      <div className="maintain-container content-wrapper">
+        {/* LEFT SIDE */}
+        <div className="maintain-left">
+          <h2>Move to <br />Maintain your <br />Health</h2>
+          <p>
+            Energize your lifestyle, embrace movement for a healthier you.
+            Get motivated, stay active, and reap the benefits of a vibrant, well-nurtured body.
+          </p>
+        </div>
 
-// export default Maintain;
+        {/* RIGHT VISUAL */}
+        <div className="maintain-visual">
+          <div className="circle-wrapper">
+            <img src={person} alt="Fit Person" className="fit-person" />
+            <div className="dotted-circle"></div>
+
+            <div className="food-circle food-top">
+              <img src={fruit} alt="Fruit" />
+            </div>
+            <div className="food-circle food-left">
+              <img src={veggie} alt="Veggie" />
+            </div>
+            <div className="food-circle food-right">
+              <img src={protein} alt="Protein" />
+            </div>
+            <div className="food-circle food-bottom">
+            <img src={water} alt="Water" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default MaintainSection;
