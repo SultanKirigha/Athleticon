@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Hero.css';
-import HeroImage from '../../Assets/man-with-barbell.jpg'; // Make sure this is your actual image path
+import HeroImage from '../../Assets/man-with-barbell.jpg';
+import DecorTop from '../../Assets/hero-lift.jpg';
+import DecorBottom from '../../Assets/women-exercising-treadmill.jpg';
 
 const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +28,10 @@ const Hero = () => {
       <section className="hero-section">
         <div className="hero-container">
           <div className="hero-left">
-            <h1>Fitness &<br /><span>Health Training</span></h1>
+            <h1>
+              Fitness &<br />
+              <span>Health Training</span>
+            </h1>
             <p>
               Strong is the simplest, most intuitive workout tracking experience.<br />
               Trusted by over 3 million users worldwide.
@@ -40,7 +45,11 @@ const Hero = () => {
           </div>
 
           <div className="hero-right">
-            <img src={HeroImage} alt="Workout" />
+            <div className="hero-image-wrapper">
+              <img src={HeroImage} alt="Workout" className="main-hero-img" />
+              <img src={DecorTop} alt="Top Decor" className="hero-decor top-right" />
+              <img src={DecorBottom} alt="Bottom Decor" className="hero-decor bottom-left" />
+            </div>
           </div>
         </div>
       </section>
