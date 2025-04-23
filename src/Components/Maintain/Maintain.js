@@ -24,7 +24,6 @@ const MaintainSection = () => {
         <div className="maintain-visual">
           <div className="circle-wrapper">
             <img src={person} alt="Fit Person" className="fit-person" />
-            <div className="dotted-circle"></div>
 
             <div className="food-circle food-top">
               <img src={fruit} alt="Fruit" />
