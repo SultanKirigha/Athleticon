@@ -3,6 +3,7 @@ import Hero from './Components/Hero/Hero';
 import StatsSection from './Components/StatsSection/StatsSection';
 import MaintainSection from './Components/Maintain/Maintain';
 import ObjectivesSection from './Components/Objective/ObjectivesSection';
+import InsightsSection from './Components/Insight/InsightsSection';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <StatsSection />
       <MaintainSection />
       <ObjectivesSection/>
+      <InsightsSection/>
     </div>
   );
 }
