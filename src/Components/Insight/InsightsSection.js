@@ -16,26 +16,6 @@ const InsightsSection = () => {
           <img src={middleImg} alt="Middle" className="insight-img" />
           <img src={bottomImg} alt="Bottom" className="insight-img" />
         </div>
-
-        {/* RIGHT: Text aligned to middle image */}
-        <div className="insights-text">
-          <small>Achieve your Goals</small>
-          <div className="heading-row">
-            <h2>
-              Personalized Insights <br />
-              and Recommendations
-            </h2>
-            <div className="arrow-controls">
-              <button className="arrow left"></button>
-              <button className="arrow right"></button>
-            </div>
-          </div>
-          <p>
-            Based on your body composition data, Fits offers personalized insights and
-            recommendations tailored to your specific goals and needs.
-          </p>
-        </div>
-
       </div>
     </section>
   );

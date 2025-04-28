@@ -1,0 +1,147 @@
+/* TestimonialSection.css (updated full-width layout) */
+
+.testimonial-section {
+    position: relative;
+    padding: 100px 0px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 80px;
+    position: relative;
+    z-index: 2;
+    padding: 0 40px;
+  }
+  
+  .testimonial-image img {
+    max-width: 380px;
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .testimonial-content {
+    max-width: 640px;
+    text-align: center;
+  }
+  
+  .testimonial-content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-content .quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .testimonial-content .name {
+    font-size: 20px;
+    color: #ff5722;
+    font-weight: 700;
+  }
+  
+  .testimonial-content .position {
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+  }
+  
+  .dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    transition: background 0.3s;
+  }
+  
+  .dot.active {
+    background: #6dc24b;
+  }
+  
+  /* Background Elements */
+  .scribble-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: auto;
+    opacity: 0.2;
+    z-index: 1;
+  }
+  
+  .plate-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 380px;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+  }
+  
+  /* Fade Animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .testimonial-container {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .testimonial-image img {
+      max-width: 300px;
+    }
+  
+    .plate-bg {
+      width: 260px;
+    }
+  
+    .scribble-bg {
+      width: 160px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .testimonial-content h3 {
+      font-size: 26px;
+    }
+  
+    .testimonial-content .quote {
+      font-size: 16px;
+    }
+  
+    .plate-bg {
+      width: 200px;
+    }
+  
+    .scribble-bg {
+      width: 120px;
+    }
+  }
+  

@@ -4,6 +4,7 @@ import StatsSection from './Components/StatsSection/StatsSection';
 import MaintainSection from './Components/Maintain/Maintain';
 import ObjectivesSection from './Components/Objective/ObjectivesSection';
 import InsightsSection from './Components/Insight/InsightsSection';
+import TestimonialSection from './Components/Testimonial/TestimonialSection';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <MaintainSection />
       <ObjectivesSection/>
       <InsightsSection/>
+      <TestimonialSection/>
     </div>
   );
 }
