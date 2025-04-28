@@ -1,286 +1,218 @@
+/* ========== Maintain Section Layout ========== */
 .maintain-section {
-  background: #fefefe;
-  padding: 80px 0;
+  background: #fff;
+  padding: 80px 20px;
 }
 
-.maintain-container {
+.maintain-wrapper {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 40px;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+  gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* LEFT SIDE */
 .maintain-left {
-  flex: 0 0 50%;
-  max-width: 540px;
-  text-align: left;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.maintain-left h2 {
-  font-size: 64px;
+.maintain-left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.maintain-right {
+  flex: 1;
+}
+
+.maintain-right small {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e64a19;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.maintain-right h2 {
+  font-size: 40px;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
-.maintain-left p {
-  font-size: 17px;
-  color: #444;
+.maintain-right p {
+  font-size: 16px;
+  color: #555;
   line-height: 1.6;
   margin-bottom: 24px;
 }
 
-.maintain-left button {
-  background: #ff5722;
+.features {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #e64a19;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon i {
   color: white;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 24px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  margin-bottom: 24px;
+  font-size: 24px;
 }
 
-.slider-indicator {
+
+.feature-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* BMI Calculator Section */
+.bmi-section {
+  background: #f0f9f4;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.bmi-section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.bmi-form {
   display: flex;
-  gap: 12px;
-}
-
-.dash {
-  width: 40px;
-  height: 5px;
-  background: #ddd;
-  border-radius: 4px;
-}
-
-.dash.active {
-  background: #111;
-}
-
-/* RIGHT SIDE: VISUAL */
-.maintain-visual {
-  flex: 1;
-  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 }
 
-.circle-wrapper {
-  position: relative;
-  width: 500px;
-  height: 500px;
+.bmi-toggle {
+  display: flex;
+  gap: 10px;
 }
 
-.fit-person {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: auto;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+.bmi-toggle button {
+  background: #ddd;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.dotted-circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 440px;
-  height: 440px;
-  transform: translate(-50%, -50%);
-  border: 3px dashed #ccc;
-  border-radius: 50%;
-  z-index: 1;
+.bmi-toggle button.active {
+  background: #e64a19;
+  color: #fff;
 }
 
-/* Food Circles */
-.food-circle {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: #fff;
-  padding: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  z-index: 3;
-  animation: orbit 12s linear infinite;
-  transform-origin: center;
+.bmi-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  min-width: 120px;
 }
 
-.food-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+.calculate-btn {
+  background-color:#e64a19;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Orbiting Start Positions */
-.food-top {
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation-delay: 0s;
+.calculate-btn:hover {
+  background-color:#e64a19;
 }
 
-.food-left {
-  top: 50%;
-  left: -20px;
-  transform: translateY(-50%);
-  animation-delay: 3s;
+/* BMI Result Styles */
+.bmi-result {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.food-right {
-  top: 50%;
-  right: -20px;
-  transform: translateY(-50%);
-  animation-delay: 6s;
+/* BMI Category Colors */
+.bmi-result.underweight {
+  background: #00bcd4;
+  color: white;
 }
 
-.food-bottom {
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation-delay: 9s;
+.bmi-result.normal {
+  background: #4caf50;
+  color: white;
 }
 
-/* Orbit Animation */
-@keyframes orbit {
-  0% {
-    transform: rotate(0deg) translateX(220px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translateX(220px) rotate(-360deg);
-  }
+.bmi-result.overweight {
+  background: #ff9800;
+  color: white;
 }
 
-/* ----------------- RESPONSIVE ----------------- */
+.bmi-result.obese {
+  background: #f44336;
+  color: white;
+}
 
-/* Tablet */
+/* ========== Responsive Layout ========== */
 @media (max-width: 1024px) {
-  .maintain-container {
+  .maintain-wrapper {
+    flex-direction: column;
+  }
+
+  .features {
     flex-direction: column;
     align-items: center;
   }
-
-  .maintain-left,
-  .maintain-visual {
-    max-width: 100%;
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .maintain-left h2 {
-    font-size: 40px;
-  }
-
-  .circle-wrapper {
-    width: 380px;
-    height: 380px;
-  }
-
-  .fit-person {
-    width: 230px;
-  }
-
-  .dotted-circle {
-    width: 320px;
-    height: 320px;
-  }
-
-  .food-circle {
-    width: 70px;
-    height: 70px;
-  }
-
-  @keyframes orbit {
-    0% {
-      transform: rotate(0deg) translateX(160px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translateX(160px) rotate(-360deg);
-    }
-  }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .maintain-left h2 {
+@media (max-width: 600px) {
+  .maintain-right h2 {
     font-size: 32px;
   }
 
-  .maintain-left p {
-    font-size: 15px;
+  .bmi-form {
+    flex-direction: column;
   }
 
-  .circle-wrapper {
-    width: 300px;
-    height: 300px;
-  }
-
-  .fit-person {
-    width: 200px;
-  }
-
-  .dotted-circle {
-    width: 260px;
-    height: 260px;
-  }
-
-  .food-circle {
-    width: 60px;
-    height: 60px;
-  }
-
-  @keyframes orbit {
-    0% {
-      transform: rotate(0deg) translateX(130px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translateX(130px) rotate(-360deg);
-    }
-  }
-}
-
-/* Extra Small */
-@media (max-width: 480px) {
-  .maintain-left h2 {
-    font-size: 26px;
-  }
-
-  .maintain-left p {
-    font-size: 14px;
-  }
-
-  .circle-wrapper {
-    width: 240px;
-    height: 240px;
-  }
-
-  .fit-person {
-    width: 160px;
-  }
-
-  .dotted-circle {
-    width: 200px;
-    height: 200px;
-  }
-
-  .food-circle {
-    width: 50px;
-    height: 50px;
-  }
-
-  @keyframes orbit {
-    0% {
-      transform: rotate(0deg) translateX(100px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translateX(100px) rotate(-360deg);
-    }
+  .bmi-form select,
+  .bmi-form input {
+    width: 100%;
   }
 }
